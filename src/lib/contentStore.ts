@@ -144,21 +144,21 @@ const defaultContent: PortfolioContent = {
       id: 'github',
       name: 'GitHub',
       iconName: 'Github',
-      href: 'https://github.com/Aminul70',
+      href: 'https://github.com/aminul-ethos',
       color: '#ffffff',
       disabled: false
     }, {
       id: 'instagram',
       name: 'Instagram',
       iconName: 'Instagram',
-      href: 'https://www.instagram.com/noob_aminul',
+      href: 'https://www.instagram.com/aminul.ethos',
       color: '#E4405F',
       disabled: false
     }, {
       id: 'facebook',
       name: 'Facebook',
       iconName: 'Facebook',
-      href: 'https://www.facebook.com/noob.aminul',
+      href: 'https://www.facebook.com/aminul.ethos',
       color: '#1877F2',
       disabled: false
     }, {
@@ -197,7 +197,7 @@ const defaultContent: PortfolioContent = {
     copyrightText: '© 2026 MD Aminul Islam • All Rights Reserved'
   }
 };
-const STORAGE_KEY = 'amin-control-content';
+const STORAGE_KEY = 'amin-control-content-v2';
 export function getContent(): PortfolioContent {
   if (typeof window === 'undefined') return defaultContent;
   const stored = localStorage.getItem(STORAGE_KEY);

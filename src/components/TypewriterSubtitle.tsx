@@ -59,18 +59,18 @@ export function TypewriterSubtitle() {
     }, 530); // 530ms blink
     return () => clearInterval(interval);
   }, []);
-  return <div className="w-full flex flex-col items-start text-left gap-3">
-      {/* Static Subtitle - appears ONCE */}
-      <p className="text-xl md:text-2xl text-gray-200 font-medium">
-        Next-Gen Developer & Video Editor
-      </p>
+  return <div className="w-full flex flex-col items-start text-left gap-2 md:gap-3">
+    {/* Static Subtitle - appears ONCE */}
+    <p className="text-lg md:text-2xl text-gray-200 font-medium tracking-wide">
+      Next-Gen Developer & Video Editor
+    </p>
 
-      {/* Typewriter effect with phrases */}
-      <div className="text-base md:text-lg text-gray-400 h-7 flex items-center" style={{
+    {/* Typewriter effect with phrases */}
+    <div className="text-sm md:text-lg text-gray-400 h-6 md:h-7 flex items-center mb-2 md:mb-0" style={{
       minWidth: `${longestPhrase.length * 0.6}em`
     }}>
-        <span>{displayedText}</span>
-        <span className={`inline-block w-0.5 h-5 bg-cyan-500 ml-1 transition-opacity duration-100 ${showCursor ? 'opacity-100' : 'opacity-0'}`} />
-      </div>
-    </div>;
+      <span>{displayedText}</span>
+      <span className={`inline-block w-0.5 h-4 md:h-5 bg-cyan-500 ml-1 transition-opacity duration-100 ${showCursor ? 'opacity-100' : 'opacity-0'}`} />
+    </div>
+  </div>;
 }

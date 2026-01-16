@@ -1,0 +1,14 @@
+/* Custom cursor for admin panel */
+.admin-cursor,
+.admin-cursor * {
+  cursor: url('/custom-cursor.png') 12 12, auto !important;
+}
+
+/* Ensure cursor works on all interactive elements */
+.admin-cursor button,
+.admin-cursor a,
+.admin-cursor input,
+.admin-cursor textarea,
+.admin-cursor select {
+  cursor: url('/custom-cursor.png') 12 12, pointer !important;
+}
